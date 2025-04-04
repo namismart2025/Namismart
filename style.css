@@ -1,0 +1,177 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Header and Navigation */
+header {
+  background-color: #f4f4f4;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+header .logo svg {
+  margin-right: 0.5rem;
+}
+
+header .business-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+  color: #add8e6;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: #e0f7ff;
+}
+
+.hero h1 {
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.hero .tagline {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  background-color: #add8e6;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+/* Section Styling */
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+section h1, section h2 {
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+/* Overview & About */
+.overview, .about, .services, .gallery, .contact {
+  margin-bottom: 2rem;
+}
+
+/* Services Section */
+.services article {
+  margin-bottom: 2rem;
+}
+
+/* Gallery */
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.gallery-container img {
+  max-width: 300px;
+  width: 100%;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Contact Form */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact form label {
+  margin: 0.5rem 0 0.25rem;
+}
+
+.contact form input,
+.contact form textarea {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contact form button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: none;
+  background-color: #add8e6;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer a {
+  color: #add8e6;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 0.5rem 0;
+  }
+
+  .gallery-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
